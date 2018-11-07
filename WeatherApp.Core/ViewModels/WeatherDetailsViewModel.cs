@@ -51,14 +51,10 @@ namespace WeatherApp.Core.ViewModels
         public async void ShowWeatherAsync()
         {
             CityName = _mainWeatherViewModel.City;
-
-            //_cityName = _singleton.CityName;
-
+            
             var result = await _weatherService.GetWeather(CityName);
 
             Temperature = Math.Round(result.Main.Temperature, 1);
-            //object _result;
-            //_result = Singleton.Instance;
 
            
         }
