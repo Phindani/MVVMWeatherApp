@@ -2603,9 +2603,6 @@ namespace WeatherApp.Droid
 			// aapt resource value: 0x7f080061
 			public const int image = 2131230817;
 			
-			// aapt resource value: 0x7f0800b0
-			public const int imageView = 2131230896;
-			
 			// aapt resource value: 0x7f0800a8
 			public const int info = 2131230888;
 			
@@ -2633,11 +2630,8 @@ namespace WeatherApp.Droid
 			// aapt resource value: 0x7f080063
 			public const int list_item = 2131230819;
 			
-			// aapt resource value: 0x7f0800b3
-			public const int lvTable = 2131230899;
-			
-			// aapt resource value: 0x7f0800b5
-			public const int masked = 2131230901;
+			// aapt resource value: 0x7f0800b4
+			public const int masked = 2131230900;
 			
 			// aapt resource value: 0x7f0800a1
 			public const int media_actions = 2131230881;
@@ -2900,8 +2894,11 @@ namespace WeatherApp.Droid
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800b4
-			public const int visible = 2131230900;
+			// aapt resource value: 0x7f0800b3
+			public const int visible = 2131230899;
+			
+			// aapt resource value: 0x7f0800b0
+			public const int weatherIcon = 2131230896;
 			
 			// aapt resource value: 0x7f08003e
 			public const int withText = 2131230782;
@@ -3149,7 +3146,10 @@ namespace WeatherApp.Droid
 			public const int tooltip = 2130968636;
 			
 			// aapt resource value: 0x7f04003d
-			public const int WeatherDetailsView = 2130968637;
+			public const int weather_details_columns = 2130968637;
+			
+			// aapt resource value: 0x7f04003e
+			public const int WeatherDetailsView = 2130968638;
 			
 			static Layout()
 			{
@@ -3285,8 +3285,8 @@ namespace WeatherApp.Droid
 			// aapt resource value: 0x7f09001f
 			public const int bottom_sheet_behavior = 2131296287;
 			
-			// aapt resource value: 0x7f09003a
-			public const int btnGetWeather = 2131296314;
+			// aapt resource value: 0x7f09003c
+			public const int btnGetWeather = 2131296316;
 			
 			// aapt resource value: 0x7f09002c
 			public const int btnGetWeatherText = 2131296300;
@@ -3294,8 +3294,14 @@ namespace WeatherApp.Droid
 			// aapt resource value: 0x7f090020
 			public const int character_counter_pattern = 2131296288;
 			
+			// aapt resource value: 0x7f09003b
+			public const int details = 2131296315;
+			
 			// aapt resource value: 0x7f09002b
 			public const int etCityName = 2131296299;
+			
+			// aapt resource value: 0x7f09003a
+			public const int headings = 2131296314;
 			
 			// aapt resource value: 0x7f090033
 			public const int icon = 2131296307;
@@ -3304,7 +3310,7 @@ namespace WeatherApp.Droid
 			public const int iconPath = 2131296313;
 			
 			// aapt resource value: 0x7f09002d
-			public const int lvTable = 2131296301;
+			public const int listDetails = 2131296301;
 			
 			// aapt resource value: 0x7f090021
 			public const int password_toggle_content_description = 2131296289;

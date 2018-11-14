@@ -12,10 +12,10 @@ namespace WeatherApp
         public class Coord
         {
             [JsonProperty(PropertyName = "lon")]
-            public double Longitude { get; set; }
+            public string Longitude { get; set; }
 
             [JsonProperty(PropertyName = "lat")]
-            public double Latitude { get; set; }
+            public string Latitude { get; set; }
         }
 
         public class Weather
@@ -39,10 +39,10 @@ namespace WeatherApp
             public double Temperature { get; set; }
 
             [JsonProperty(PropertyName = "pressure")]
-            public double Pressure { get; set; }
+            public string Pressure { get; set; }
 
             [JsonProperty(PropertyName = "humidity")]
-            public int Humidity { get; set; }
+            public string Humidity { get; set; }
 
             [JsonProperty(PropertyName = "temp_min")]
             public double MinTemperature { get; set; }
@@ -60,16 +60,16 @@ namespace WeatherApp
         public class Wind
         {
             [JsonProperty(PropertyName = "speed")]
-            public double Speed { get; set; }
+            public string Speed { get; set; }
 
             [JsonProperty(PropertyName = "deg")]
-            public long Degrees { get; set; }
+            public string Degrees { get; set; }
         }
 
         public class Clouds
         {
             [JsonProperty(PropertyName = "all")]
-            public int All { get; set; }
+            public string All { get; set; }
         }
 
         public class Sys

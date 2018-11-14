@@ -97,7 +97,11 @@
     </PackageReference>
     <PackageReference Include="Xamarin.Android.Support.Design" Version="27.0.2.1" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\weather_details_columns.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WeatherApp.Core\WeatherApp.Core.csproj">
       <Project>{245eb4a2-7ec5-4976-b81e-dfd919859d06}</Project>

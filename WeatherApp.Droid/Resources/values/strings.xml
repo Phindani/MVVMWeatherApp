@@ -5,7 +5,7 @@
   <string name="tvTemperature">Temperature</string>
   <string name="etCityName"></string>
   <string name="btnGetWeatherText">Get weather</string>
-  <string name="lvTable"></string>
+  <string name="listDetails"></string>
   <string name="wind">Wind</string>
   <string name="tvSunrise">Sunrise</string>
   <string name="tvSunset">Sunset</string>
@@ -18,5 +18,7 @@
   <string name="tvPressure">Pressure</string>
   <string name="tvHumidity">Humidity</string>
   <string name="iconPath"></string>
+  <string name="textView1"></string>
+  <string name="textView2"></string>
   <string name="btnGetWeather"></string>
 </resources>

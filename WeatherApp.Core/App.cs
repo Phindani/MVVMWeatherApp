@@ -5,17 +5,21 @@ using MvvmCross;
 using MvvmCross.ViewModels;
 using WeatherApp.Core.ViewModels;
 using WeatherApp.Core.Services;
+using MvvmCross.IoC;
+
 namespace WeatherApp.Core
 {
     public class App : MvxApplication
     {
         public override void Initialize()
         {
-            #pragma warning disable CS0618 // Type or member is obsolete
-            Mvx.RegisterType<IWeatherService, WeatherService>();
-            #pragma warning restore CS0618 // Type or member is obsolete
 
+         
+            Mvx.IoCProvider.RegisterType<IWeatherService, WeatherService>();
+            Mvx.IoCProvider.LazyConstructAndRegisterSingleton<ISystemCacheService, SystemCacheService>();
+            
             RegisterAppStart<MainWeatherViewModel>();
+
         }
     }
 }
