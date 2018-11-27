@@ -2624,14 +2624,17 @@ namespace WeatherApp.Droid
 			// aapt resource value: 0x7f080018
 			public const int line3 = 2131230744;
 			
+			// aapt resource value: 0x7f0800b5
+			public const int listDetails = 2131230901;
+			
 			// aapt resource value: 0x7f08001f
 			public const int listMode = 2131230751;
 			
 			// aapt resource value: 0x7f080063
 			public const int list_item = 2131230819;
 			
-			// aapt resource value: 0x7f0800b4
-			public const int masked = 2131230900;
+			// aapt resource value: 0x7f0800b7
+			public const int masked = 2131230903;
 			
 			// aapt resource value: 0x7f0800a1
 			public const int media_actions = 2131230881;
@@ -2828,6 +2831,12 @@ namespace WeatherApp.Droid
 			// aapt resource value: 0x7f08006b
 			public const int textSpacerNoTitle = 2131230827;
 			
+			// aapt resource value: 0x7f0800af
+			public const int textView1 = 2131230895;
+			
+			// aapt resource value: 0x7f0800b0
+			public const int textView2 = 2131230896;
+			
 			// aapt resource value: 0x7f08009a
 			public const int text_input_password_toggle = 2131230874;
 			
@@ -2873,14 +2882,14 @@ namespace WeatherApp.Droid
 			// aapt resource value: 0x7f080013
 			public const int transition_transform = 2131230739;
 			
-			// aapt resource value: 0x7f0800af
-			public const int tvCityName = 2131230895;
-			
-			// aapt resource value: 0x7f0800b2
-			public const int tvDateTime = 2131230898;
-			
 			// aapt resource value: 0x7f0800b1
-			public const int tvTemperature = 2131230897;
+			public const int tvCityName = 2131230897;
+			
+			// aapt resource value: 0x7f0800b4
+			public const int tvDateTime = 2131230900;
+			
+			// aapt resource value: 0x7f0800b3
+			public const int tvTemperature = 2131230899;
 			
 			// aapt resource value: 0x7f08002f
 			public const int uniform = 2131230767;
@@ -2894,11 +2903,11 @@ namespace WeatherApp.Droid
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800b3
-			public const int visible = 2131230899;
+			// aapt resource value: 0x7f0800b6
+			public const int visible = 2131230902;
 			
-			// aapt resource value: 0x7f0800b0
-			public const int weatherIcon = 2131230896;
+			// aapt resource value: 0x7f0800b2
+			public const int weatherIcon = 2131230898;
 			
 			// aapt resource value: 0x7f08003e
 			public const int withText = 2131230782;
@@ -3294,14 +3303,8 @@ namespace WeatherApp.Droid
 			// aapt resource value: 0x7f090020
 			public const int character_counter_pattern = 2131296288;
 			
-			// aapt resource value: 0x7f09003b
-			public const int details = 2131296315;
-			
 			// aapt resource value: 0x7f09002b
 			public const int etCityName = 2131296299;
-			
-			// aapt resource value: 0x7f09003a
-			public const int headings = 2131296314;
 			
 			// aapt resource value: 0x7f090033
 			public const int icon = 2131296307;
@@ -3332,6 +3335,24 @@ namespace WeatherApp.Droid
 			
 			// aapt resource value: 0x7f090026
 			public const int status_bar_notification_info_overflow = 2131296294;
+			
+			// aapt resource value: 0x7f090040
+			public const int tabOpportunity = 2131296320;
+			
+			// aapt resource value: 0x7f09003d
+			public const int tabOverview = 2131296317;
+			
+			// aapt resource value: 0x7f09003f
+			public const int tabSkills = 2131296319;
+			
+			// aapt resource value: 0x7f09003e
+			public const int tabUniversity = 2131296318;
+			
+			// aapt resource value: 0x7f09003a
+			public const int textView1 = 2131296314;
+			
+			// aapt resource value: 0x7f09003b
+			public const int textView2 = 2131296315;
 			
 			// aapt resource value: 0x7f090029
 			public const int tvCity = 2131296297;

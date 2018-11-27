@@ -5,16 +5,18 @@
     android:layout_height="match_parent"
     android:padding="5dp">
 	<TextView
-		android:id="@+id/textView1"
-		android:layout_weight="1"
+		android:layout_width="0dp"
 		android:layout_height="wrap_content"
-		android:textSize="20dp"
+		android:layout_weight="1"
+		android:textSize="12dip"
 		android:textStyle="bold"
-		app:MvxBind="Text Title" />
+		local:MvxBind="Text Title"
+		android:id="@+id/textView1" />
 	<TextView
-		android:id="@+id/textView2"
+		android:layout_width="0dp"
 		android:layout_weight="1"
 		android:layout_height="wrap_content"
-		android:textSize="20dp"
-		app:MvxBind="Text Value" />
+		android:textSize="12dip"
+		local:MvxBind="Text Value"
+		android:id="@+id/textView2" />
 </LinearLayout>

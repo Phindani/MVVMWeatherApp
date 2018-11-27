@@ -11,6 +11,7 @@ namespace WeatherApp.Core.ViewModels
     public class WeatherDetailsViewModel : MvxViewModel
     {
         private readonly ISystemCacheService _systemCache;
+        readonly string _url = "http://openweathermap.org/img/w/";
 
         public WeatherDetailsViewModel(ISystemCacheService systemCache)
         {
@@ -24,7 +25,6 @@ namespace WeatherApp.Core.ViewModels
         public string Description { get; private set; }
         public string Icon { get; private set; }
         public string IconUrl { get; private set; }
-        readonly string url = "http://openweathermap.org/img/w/";
         public string Date_Time { get; private set; }
         public string Cloudiness { get; private set; }
         public string Wind { get; private set; }
@@ -33,6 +33,7 @@ namespace WeatherApp.Core.ViewModels
         public string Sunrise { get; private set; }
         public string Sunset { get; private set; }
         public string Coords { get; private set; }
+        
 
         public List<WeatherDetail> MyListItems { get; private set; }
 
@@ -44,7 +45,7 @@ namespace WeatherApp.Core.ViewModels
             Country = result.Sys.Country;
             CityName = "Weather in " + result.Name + ", " + Country;
             Icon = result.Weather[0].Icon;
-            IconUrl = url + Icon + ".png";
+            IconUrl = _url + Icon + ".png";
             Temperature = result.Main.Temperature + " \u2103";
 
             Date dt = new Date(Convert.ToInt64(result.Lastupdate) * 1000);
@@ -57,15 +58,15 @@ namespace WeatherApp.Core.ViewModels
             Pressure = result.Main.Pressure;
             Humidity = result.Main.Humidity;
 
-            Date dtSunrise = new Date(Convert.ToInt64(result.Lastupdate) * 1000);
+            Date dtSunrise = new Date(Convert.ToInt64(result.Sys.Sunrise) * 1000);
             SimpleDateFormat sfdSunrise = new SimpleDateFormat("HH:mm");
             Sunrise = sfdSunrise.Format(dtSunrise).ToString();
 
-            Date dtSunset = new Date(Convert.ToInt64(result.Lastupdate) * 1000);
+            Date dtSunset = new Date(Convert.ToInt64(result.Sys.Sunset) * 1000);
             SimpleDateFormat sfdSunset = new SimpleDateFormat("HH:mm");
             Sunset = sfdSunset.Format(dtSunset).ToString();
 
-            Coords = "[" + result.Coordinate.Latitude + "," + result.Coordinate.Longitude + "]";
+            Coords = "[" + result.Coordinate.Latitude + ", " + result.Coordinate.Longitude + "]";
 
             MyListItems.Add(new WeatherDetail("Wind", Wind + " km/h"));
             MyListItems.Add(new WeatherDetail("Cloudiness", Cloudiness + " %"));

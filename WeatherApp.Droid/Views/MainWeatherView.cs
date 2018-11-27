@@ -15,7 +15,7 @@ using WeatherApp.Core.ViewModels;
 
 namespace WeatherApp.Droid.Views
 {
-    [Activity(Label = "Weather Application", MainLauncher = true)]
+    [Activity(Label = "Weather App", MainLauncher = true, Theme = "@style/AppTheme")]
     public class MainWeatherView : MvxActivity<MainWeatherViewModel>
     {
         protected override void OnCreate(Bundle bundle)

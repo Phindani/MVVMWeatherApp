@@ -52,7 +52,7 @@
 	<TextView
 		android:id="@+id/tvDateTime"
 		android:layout_width="326dp"
-		android:layout_height="60dp"
+		android:layout_height="58dp"
 		android:layout_marginBottom="8dp"
 		android:layout_marginLeft="8dp"
 		android:layout_marginStart="8dp"
@@ -60,11 +60,11 @@
 		android:textSize="13sp"
 	    local:MvxBind="Text Description" />
 	<MvxListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="10dp"
-        android:id="@+id/listDetails"
-        app:MvxBind="ItemsSource MyListItems"
-        app:MvxItemTemplate="@layout/weather_details_columns" />
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="5dp"
+		android:id="@+id/listDetails"
+		local:MvxBind="ItemsSource MyListItems"
+		local:MvxItemTemplate="@layout/weather_details_columns" />
 	
 </LinearLayout>

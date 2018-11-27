@@ -1,5 +1,5 @@
 <resources>
-  <string name="app_name">Open Weather</string>
+  <string name="app_name">Weather App</string>
   <string name="action_settings">Settings</string>
   <string name="tvCity">City</string>
   <string name="tvTemperature">Temperature</string>
@@ -21,4 +21,8 @@
   <string name="textView1"></string>
   <string name="textView2"></string>
   <string name="btnGetWeather"></string>
+  <string name="tabOverview">Overview</string>
+  <string name="tabUniversity">University</string>
+  <string name="tabSkills">Skills in-demand</string>
+  <string name="tabOpportunity">Opportunities</string>
 </resources>
